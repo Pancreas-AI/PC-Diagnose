@@ -25,14 +25,8 @@ Excel outputs, packaged macOS apps, or zip archives.
 
 ## Data Policy
 
-Clinical source workbooks, cleaned patient-level CSV files, generated tables,
-figures, PDFs, PPT files, and packaged apps are excluded from this repository.
-
-To reproduce analyses locally, place the required source workbooks in the
-project root with the filenames expected by each script, for example:
-
-- `工作簿1.xlsx`
-- `2026胰腺癌数据汇总.xlsx`
+Clinical data files, cleaned patient-level files, generated tables, figures,
+PDFs, PPT files, and packaged apps are excluded from this repository.
 
 Do not commit patient-level data to this repository.
 
@@ -66,10 +60,6 @@ Desktop app source:
 ```bash
 python app_source/diagnosis_app.py
 ```
-
-The app source expects local training/performance data files in the paths used
-by `app_source/diagnosis_model.py`. Those files are intentionally not tracked in
-Git.
 
 ## Medical Disclaimer
 
